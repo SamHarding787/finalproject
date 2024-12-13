@@ -29,6 +29,8 @@ class GradeApp(QMainWindow):
             getattr(self.ui, f"attempt{i}error").setVisible(False)  # Hide error labels
         self.ui.label_2.setVisible(False)  # Hide general error message
         self.ui.submitSuccess.setVisible(False)  # Hide success message
+        self.ui.attemptError.setVisible(False)
+        self.ui.nameError.setVisible(False)
 
     def update_attempt_fields(self):
         """Update visibility of attempt fields based on the number of attempts."""
